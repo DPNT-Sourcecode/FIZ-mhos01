@@ -18,25 +18,16 @@ public class FizzBuzzSolution {
     }
 
     public String checkDigit(Integer number) {
-        int tempNum = number;
-        int digit = tempNum % 10;
-        while (tempNum != 0) {
-            int currentDigit = tempNum % 10;
-            tempNum /= 10;
-
-            if (currentDigit != digit) {
-                return "";
-            }
-        }
-        if (number > 10) {
+       if(number % 3 == 0 && number.toString().contains("3") || number % 5 == 0 && number.toString().contains("5")){
             if(number % 2 == 0){
-            return " deluxe";
-            }else{
+                return " deluxe";
+            }else {
                 return " fake deluxe";
             }
-        }
-        return "";
+       }
+       return "";
     }
 }
+
 
 
