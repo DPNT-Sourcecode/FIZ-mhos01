@@ -18,10 +18,11 @@ public class FizzBuzzSolution {
     }
 
     public String checkDigit(Integer number) {
-        int digit = number % 10;
-        while (number != 0) {
-            int currentDigit = number % 10;
-            number /= 10;
+        int tempNum = number;
+        int digit = tempNum % 10;
+        while (tempNum != 0) {
+            int currentDigit = tempNum % 10;
+            tempNum /= 10;
 
             if (currentDigit != digit) {
                 return "";
@@ -33,5 +34,6 @@ public class FizzBuzzSolution {
         return "";
     }
 }
+
 
 
