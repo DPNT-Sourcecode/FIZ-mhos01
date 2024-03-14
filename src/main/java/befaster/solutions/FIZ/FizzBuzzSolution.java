@@ -29,8 +29,13 @@ public class FizzBuzzSolution {
             }
         }
         if (number > 10) {
+            if(number % 2 == 0){
             return " deluxe";
+            }else{
+                return " fake deluxe";
+            }
         }
         return "";
     }
 }
+
