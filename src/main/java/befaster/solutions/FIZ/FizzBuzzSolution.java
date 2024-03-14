@@ -12,7 +12,7 @@ public class FizzBuzzSolution {
         } else if (number % 5 == 0 || number.toString().contains("5")) {
             return "buzz"  + checkDigit(number);
         }if(!checkDigit(number).isEmpty()){
-            return "deluxe";
+            return checkDigit(number).trim();
         }
         return number.toString();
     }
@@ -38,4 +38,5 @@ public class FizzBuzzSolution {
         return "";
     }
 }
+
 
